@@ -143,6 +143,14 @@ yarn add -D eslint-import-resolver-typescript@2.4.0
 -------------------------------------------------------------------------
 
 
+yarn add -D prettier@2.2.1
+
+yarn add -D eslint-config-prettier@8.1.0
+
+yarn add -D eslint-plugin-prettier@3.3.1
+
+
+
 
 -------------------------------------------------------------------------
 
