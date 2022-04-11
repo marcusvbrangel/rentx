@@ -1,14 +1,16 @@
-import { Request, Response } from 'express';
-import CreateCourseService from './CreateCourseService';
+import { Request, Response } from "express";
 
-export const createCourse = (req: Request, res: Response) => {
+import CreateCourseService from "./CreateCourseService";
 
+export const createCourse = (
+  request: Request,
+  response: Response
+): Response => {
   CreateCourseService.execute({
     name: "Nodejs",
     educator: "Nemarvin",
-    duration: 10
+    duration: 10,
   });
 
-  return res.send();
-
-}
+  return response.send();
+};
