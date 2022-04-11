@@ -8,5 +8,8 @@
     120
   ],  
   "editor.quickSuggestionsDelay": 100,
-  "editor.snippetSuggestions": "top"
+  "editor.snippetSuggestions": "top",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
