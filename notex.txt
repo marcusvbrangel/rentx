@@ -1,0 +1,92 @@
+
+
+
+-------------------------------------------------------------------------
+
+node --version
+v14.19.0
+
+nvm --version
+0.39.1
+
+
+nvm ls
+->     v14.19.0
+       v16.14.0
+        v17.7.1
+default -> lts/fermium (-> v14.19.0)
+iojs -> N/A (default)
+unstable -> N/A (default)
+node -> stable (-> v17.7.1) (default)
+stable -> 17.7 (-> v17.7.1) (default)
+lts/* -> lts/gallium (-> v16.14.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.10 (-> N/A)
+lts/fermium -> v14.19.0
+lts/gallium -> v16.14.0
+
+
+
+nvm install lts/erbium
+Downloading and installing node v12.22.12...
+Downloading https://nodejs.org/dist/v12.22.12/node-v12.22.12-linux-x64.tar.xz...
+####################################################################################################################################### 100,0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v12.22.12 (npm v6.14.16)
+
+
+nvm use lts/erbium
+Now using node v12.22.12 (npm v6.14.16)
+
+
+
+-------------------------------------------------------------------------
+
+mkdir rentx
+
+cd rentx
+
+git init
+
+touch .gitignore
+
+-------------------------------------------------------------------------
+
+
+
+…or push an existing repository from the command line
+
+
+git remote add origin https://github.com/marcusvbrangel/rentx.git
+git branch -M main
+git push -u origin main
+
+
+-------------------------------------------------------------------------
+
+npm install -g yarn
+
+1.22.18
+
+yarn init
+
+yarn init v1.22.18
+question name (rentx): 
+question version (1.0.0): 
+question description: Application For Renting Cars
+question entry point (index.js): 
+question repository url (https://github.com/marcusvbrangel/rentx.git): 
+question author (Marcus Rangel <marcus.vbrangel@gmail.com>): 
+question license (MIT): 
+question private: 
+success Saved package.json
+Done in 115.16s.
+
+
+
+-------------------------------------------------------------------------
+
