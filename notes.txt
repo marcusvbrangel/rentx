@@ -121,8 +121,23 @@ http://localhost:3333/
 
 -------------------------------------------------------------------------
 
+yarn add -D eslint@7.21.0
+
+yarn eslint --init
 
 
+
+yarn add -D @typescript-eslint/eslint-plugin@4.16.1
+
+yarn add -D eslint-config-airbnb-base@14.2.1
+
+yarn add -D eslint-plugin-import@2.22.1
+
+yarn add -D @typescript-eslint/parser@4.16.1
+
+yarn add -D eslint-plugin-import-helpers@1.1.0
+
+yarn add -D eslint-import-resolver-typescript@2.4.0
 
 
 -------------------------------------------------------------------------
