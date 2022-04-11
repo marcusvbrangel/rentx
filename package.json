@@ -1,0 +1,9 @@
+{
+  "name": "rentx",
+  "version": "1.0.0",
+  "description": "Application For Renting Cars",
+  "main": "index.js",
+  "repository": "https://github.com/marcusvbrangel/rentx.git",
+  "author": "Marcus Rangel <marcus.vbrangel@gmail.com>",
+  "license": "MIT"
+}
