@@ -10,6 +10,11 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+
+# My assets
+.env
+
+
 # Runtime data
 pids
 *.pid
@@ -129,4 +134,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-.env
+
