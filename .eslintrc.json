@@ -21,6 +21,7 @@
       "prettier"
     ],
     "rules": {
+      "eslint-disable-next-line": "off",
       "prettier/prettier": "error",
       "camelcase": "off",
       "import/no-unresolved": "error",

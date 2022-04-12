@@ -8,16 +8,19 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch 'node_modules dist' --respawn src/server.ts ",
+    "dev:debug": "ts-node-dev  --inspect --transpile-only --ignore-watch 'node_modules dist' --respawn src/server.ts ",
     "lint:check": "eslint ./src --ext .ts ",
     "lint:fix": "eslint ./src   --ext .ts --fix ",
     "style:check": "prettier --check 'src/**/*.ts' ",
     "style:fix": "prettier --write 'src/**/*.ts' "
   },
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "uuid": "8.3.2"
   },
   "devDependencies": {
     "@types/express": "4.17.11",
+    "@types/uuid": "8.3.0",
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "eslint": "7.21.0",
