@@ -1,8 +1,8 @@
-import { SpecificationsRepository } from "../../repositories/inMemory/SpecificationsRepository";
+import { SpecificationsRepositoryMemory } from "../../repositories/inMemory/SpecificationsRepositoryMemory";
 import { CreateSpecificationController } from "./CreateSpecificationController";
 import { CreateSpecificationUseCase } from "./CreateSpecificationUseCase";
 
-const createSpecificationsRepository = new SpecificationsRepository();
+const createSpecificationsRepository = new SpecificationsRepositoryMemory();
 
 const createSpecificationUseUseCase = new CreateSpecificationUseCase(
   createSpecificationsRepository

@@ -4,7 +4,7 @@ import {
   ICreateCategoryDTO,
 } from "../ICategoriesRepository";
 
-class CategoriesRepository implements ICategoriesRepository {
+class CategoriesReposioryMemory implements ICategoriesRepository {
   private categories: Category[];
 
   constructor() {
@@ -34,4 +34,4 @@ class CategoriesRepository implements ICategoriesRepository {
   }
 }
 
-export { CategoriesRepository };
+export { CategoriesReposioryMemory };
