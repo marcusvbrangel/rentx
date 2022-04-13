@@ -2,7 +2,7 @@ import { CategoriesReposioryMemory } from "../../repositories/inMemory/Categorie
 import { ListCategoriesController } from "./ListCategoriesController";
 import { ListCategoriesUseCase } from "./ListCategoriesUseCase";
 
-const categoriesRepository = new CategoriesReposioryMemory();
+const categoriesRepository = CategoriesReposioryMemory.getInstance();
 
 const listCategoriesUseCase = new ListCategoriesUseCase(categoriesRepository);
 

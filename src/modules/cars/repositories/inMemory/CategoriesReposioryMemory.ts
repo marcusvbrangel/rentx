@@ -7,8 +7,18 @@ import {
 class CategoriesReposioryMemory implements ICategoriesRepository {
   private categories: Category[];
 
-  constructor() {
+  private static INSTANCE: CategoriesReposioryMemory;
+
+  private constructor() {
     this.categories = [];
+  }
+
+  public static getInstance(): CategoriesReposioryMemory {
+    if (!CategoriesReposioryMemory.INSTANCE) {
+      CategoriesReposioryMemory.INSTANCE = new CategoriesReposioryMemory();
+    }
+
+    return CategoriesReposioryMemory.INSTANCE;
   }
 
   create({ name, description }: ICreateCategoryDTO): void {

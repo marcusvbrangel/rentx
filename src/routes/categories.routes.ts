@@ -10,8 +10,7 @@ categoriesRoutes.post("/", (request, response) => {
 });
 
 categoriesRoutes.get("/", (request, response) => {
-  const categories = listCategoriesController.handle(request, response);
-  return response.json(categories);
+  return listCategoriesController.handle(request, response);
 });
 
 export { categoriesRoutes };

@@ -2,7 +2,7 @@ import { SpecificationsRepositoryMemory } from "../../repositories/inMemory/Spec
 import { ListSpecificationsController } from "./ListSpecificationsController";
 import { ListSpecificationsUseCase } from "./ListSpecificationsUseCase";
 
-const specificationsRepository = new SpecificationsRepositoryMemory();
+const specificationsRepository = SpecificationsRepositoryMemory.getInstance();
 
 const listSpecificationsUseCase = new ListSpecificationsUseCase(
   specificationsRepository

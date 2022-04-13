@@ -2,14 +2,14 @@ import { SpecificationsRepositoryMemory } from "../../repositories/inMemory/Spec
 import { CreateSpecificationController } from "./CreateSpecificationController";
 import { CreateSpecificationUseCase } from "./CreateSpecificationUseCase";
 
-const createSpecificationsRepository = new SpecificationsRepositoryMemory();
+const createSpecificationsRepository = SpecificationsRepositoryMemory.getInstance();
 
 const createSpecificationUseUseCase = new CreateSpecificationUseCase(
   createSpecificationsRepository
 );
 
-const createSpecificationController = new CreateSpecificationController(
+const createSpecificationsController = new CreateSpecificationController(
   createSpecificationUseUseCase
 );
 
-export { createSpecificationController };
+export { createSpecificationsController };
