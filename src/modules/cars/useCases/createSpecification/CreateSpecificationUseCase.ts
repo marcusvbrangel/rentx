@@ -1,19 +1,19 @@
-import { ISpecificationsRepository } from "../../repositories/interface/ISpecificationsRepository";
+import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 interface IRequest {
   name: string;
   description: string;
 }
 
-class CreateSpecificationService {
+class CreateSpecificationUseCase {
   constructor(private specificationsRepository: ISpecificationsRepository) {}
 
   execute({ name, description }: IRequest): void {
-    const specificationsAlreadyExists = this.specificationsRepository.findByName(
+    const specificationAlreadyExists = this.specificationsRepository.findByName(
       name
     );
 
-    if (specificationsAlreadyExists) {
+    if (specificationAlreadyExists) {
       throw new Error("Specification Already Exists!");
     }
 
@@ -21,4 +21,4 @@ class CreateSpecificationService {
   }
 }
 
-export { CreateSpecificationService };
+export { CreateSpecificationUseCase };
