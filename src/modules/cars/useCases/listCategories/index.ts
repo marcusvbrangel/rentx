@@ -1,8 +1,8 @@
-import { CategoriesRepository } from "../../repositories/inMemory/CategoriesReposiory";
+import { CategoriesReposioryMemory } from "../../repositories/inMemory/CategoriesReposioryMemory";
 import { ListCategoriesController } from "./ListCategoriesController";
 import { ListCategoriesUseCase } from "./ListCategoriesUseCase";
 
-const categoriesRepository = new CategoriesRepository();
+const categoriesRepository = new CategoriesReposioryMemory();
 
 const listCategoriesUseCase = new ListCategoriesUseCase(categoriesRepository);
 

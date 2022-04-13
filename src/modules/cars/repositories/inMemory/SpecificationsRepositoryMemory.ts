@@ -4,7 +4,7 @@ import {
   ICreateSpecificationDTO,
 } from "../ISpecificationsRepository";
 
-class SpecificationsRepository implements ISpecificationsRepository {
+class SpecificationsRepositoryMemory implements ISpecificationsRepository {
   private specifications: Specification[];
 
   constructor() {
@@ -34,4 +34,4 @@ class SpecificationsRepository implements ISpecificationsRepository {
   }
 }
 
-export { SpecificationsRepository };
+export { SpecificationsRepositoryMemory };
