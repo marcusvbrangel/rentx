@@ -22,8 +22,6 @@ class CategoriesReposioryMemory implements ICategoriesRepository {
   }
 
   create({ name, description }: ICreateCategoryDTO): void {
-    console.log("aaaaaaaaaaaaaaaaa");
-
     const category = new Category();
 
     Object.assign(category, {
